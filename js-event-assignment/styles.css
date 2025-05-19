@@ -1,0 +1,85 @@
+:root {
+    --main-color: #6a0dad;
+    --accent-color: #b19cd9;
+}
+
+body {
+    color: white;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #420e87;
+    background: linear-gradient(180deg,rgba(66, 14, 135, 1) 0%, rgba(28, 2, 28, 1) 100%);
+}
+
+
+.light-mode {
+  background-color: rgb(230, 181, 255);
+  color: black;
+}
+
+header {
+    background-image: url(https://images.unsplash.com/photo-1480506132288-68f7705954bd?q=80&w=2120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.container {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+.tabs button {
+    margin: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); 
+    }
+
+    to { opacity: 1; transform: translateY(0); 
+    }
+}
+
+.gallery img {
+    max-width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+}
+
+form {
+    margin-top: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(255, 180, 250, 0.4);
+    padding: 25px;
+}
+
+#email, #password {
+    padding: 5px;
+    border-radius: 7px;
+    margin: 15px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid rgb(12, 216, 12);
+}
